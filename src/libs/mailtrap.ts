@@ -10,7 +10,7 @@ export const sendEmail = async (to: string, subject: string, body: string) => {
 
     try {
         
-        await mailtrap.testing.send({
+        await mailtrap.send({
 
             from: { name: 'Sistema', email: 'sistema@gmail.com' },
             to: [{ email: to }],
