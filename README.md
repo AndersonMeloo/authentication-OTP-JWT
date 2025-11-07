@@ -36,3 +36,24 @@ MAILTRAP_TOKEN="seu_token_mailtrap_aqui"
 JWT_SECRET="sua_chave_secreta_jwt"
 ```
 💡 Substitua seu_token_mailtrap_aqui e sua_chave_secreta_jwt pelos valores reais.
+
+--- 
+
+# Configurar o banco de dados
+Crie um banco no PostgreSQL e execute as migrações do Prisma:
+
+```bash
+npx prisma migrate dev
+
+# Executar o servidor
+npm run dev
+```
+
+# 🧩 Principais Rotas
+
+Método	Rota	Descrição
+GET	  /ping	        - Verifica se o servidor está online
+POST	/auth/signup	- Cadastra um novo usuário
+POST	/auth/signin	- Envia código OTP para o e-mail
+POST	/auth/useotp	- Valida o OTP e retorna o JWT
+GET	  /private	    - Rota protegida (requer token JWT)
