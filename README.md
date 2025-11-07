@@ -2,7 +2,7 @@
 
 Sistema de autenticação moderna com **Node.js**, **Express**, **Prisma** e **PostgreSQL**, utilizando **OTP via e-mail (Mailtrap)** e geração de **JWT** para acesso seguro a rotas privadas.
 
-
+---
 
 - **Node.js + Express** — Servidor backend rápido e simples.
 - **TypeScript** — Tipagem estática para maior segurança no código.
@@ -11,8 +11,7 @@ Sistema de autenticação moderna com **Node.js**, **Express**, **Prisma** e **P
 - **Mailtrap** — Ferramenta para simulação e teste de envio de e-mails.
 - **JWT (JSON Web Token)** — Autenticação segura de usuários.
 
-
-
+---
 
 ```bash
 ## ⚙️ Configuração do Ambiente
@@ -24,3 +23,16 @@ cd authentication-OTP-JWT
 # Instalar dependências
 npm install | npm i
 ```
+
+---
+
+# Configurar variáveis de ambiente
+Crie o arquivo .env na raiz do projeto com o seguinte conteúdo:
+
+```bash
+PORT=3000
+DATABASE_URL="postgresql://postgres:1234@localhost:5432/seu_banco?schema=public"
+MAILTRAP_TOKEN="seu_token_mailtrap_aqui"
+JWT_SECRET="sua_chave_secreta_jwt"
+```
+💡 Substitua seu_token_mailtrap_aqui e sua_chave_secreta_jwt pelos valores reais.
