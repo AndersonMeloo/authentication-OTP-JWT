@@ -15,7 +15,6 @@ Sistema de autenticação moderna com **Node.js**, **Express**, **Prisma** e **P
 ## ⚙️ Configuração do Ambiente
 
 ### 1️⃣ Clonar o repositório
-```bash
 git clone https://github.com/seu-usuario/authentication-OTP-JWT.git
 cd authentication-OTP-JWT
 
