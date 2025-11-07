@@ -60,4 +60,14 @@ POST	/auth/signin	- Envia código OTP para o e-mail
 
 POST	/auth/useotp	- Valida o OTP e retorna o JWT
 
+# 🔒 Segurança
+
+OTP tem tempo de expiração configurado.
+
+JWT é assinado com JWT_SECRET.
+
+Helmet e CORS configurados no servidor para maior segurança.
+
+Validação de dados com Zod.
+
 GET	  /private	    - Rota protegida (requer token JWT)
