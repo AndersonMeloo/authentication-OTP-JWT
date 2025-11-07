@@ -53,7 +53,11 @@ npm run dev
 
 Método	Rota	Descrição
 GET	  /ping	        - Verifica se o servidor está online
+
 POST	/auth/signup	- Cadastra um novo usuário
+
 POST	/auth/signin	- Envia código OTP para o e-mail
+
 POST	/auth/useotp	- Valida o OTP e retorna o JWT
+
 GET	  /private	    - Rota protegida (requer token JWT)
